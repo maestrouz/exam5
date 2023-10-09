@@ -1,0 +1,639 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
+* {
+  padding: 0; }
+
+a {
+  text-decoration: none;
+  color: #000000; }
+
+body {
+  background: #fbf8ec;
+  overflow-x: hidden; }
+
+.container {
+  margin: 0 auto; }
+
+.header {
+  width: 100%;
+  height: 500px; }
+  .header nav {
+    position: fixed;
+    display: flex;
+    margin-top: -7px;
+    margin-left: -10px;
+    width: 105%;
+    height: 70px;
+    box-shadow: 0px 2px 10px #000;
+    background-color: #fff; }
+    .header nav .nav_logo {
+      display: flex;
+      width: 20%;
+      height: 100%; }
+      .header nav .nav_logo a {
+        text-decoration: none;
+        display: flex;
+        color: black;
+        column-gap: 20px;
+        font-family: "Rubik", sans-serif; }
+      .header nav .nav_logo img {
+        margin-top: 15px;
+        margin-left: 50px;
+        width: 50px;
+        height: 42px; }
+    .header nav .nav_list {
+      display: flex;
+      width: 80%;
+      height: 100%; }
+      .header nav .nav_list .menu {
+        display: flex;
+        margin-left: 40px;
+        margin-top: 15px;
+        width: 140px;
+        gap: 8px;
+        height: 40px;
+        border-radius: 4px;
+        border: none;
+        background: #70c05b;
+        cursor: pointer; }
+        .header nav .nav_list .menu .hamburger {
+          margin-left: 8px;
+          margin-top: 8px;
+          width: 24px;
+          height: 24px; }
+        .header nav .nav_list .menu p {
+          margin-top: 5px;
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 150%;
+          margin-left: 10px;
+          color: #fff;
+          cursor: pointer;
+          font-family: "Rubik", sans-serif; }
+      .header nav .nav_list .input_search {
+        padding-left: 10px;
+        position: relative;
+        margin-left: 16px;
+        margin-top: 13px;
+        width: 344px;
+        height: 40px;
+        border-radius: 4px;
+        border: 1px solid #70c05b;
+        outline: none;
+        font-size: 18px;
+        font-family: "Rubik", sans-serif; }
+      .header nav .nav_list .search {
+        position: absolute;
+        margin-left: -30px;
+        margin-top: 25px;
+        width: 24px;
+        height: 24px; }
+      .header nav .nav_list .izbrannoe img {
+        margin-top: 10px;
+        margin-left: 70px;
+        width: 24px;
+        height: 24px; }
+      .header nav .nav_list .izbrannoe p {
+        margin-top: -1px;
+        margin-left: 40px;
+        font-family: "Rubik", sans-serif; }
+      .header nav .nav_list .producti img {
+        margin-top: 10px;
+        margin-left: 50px; }
+      .header nav .nav_list .producti p {
+        margin-top: -1px;
+        margin-left: 24px;
+        font-family: "Rubik", sans-serif; }
+      .header nav .nav_list .korzinka img {
+        margin-left: 45px;
+        margin-top: 8px; }
+      .header nav .nav_list .korzinka p {
+        margin-top: -4px;
+        margin-left: 37px;
+        font-family: "Rubik", sans-serif; }
+      .header nav .nav_list .profile {
+        display: flex;
+        margin-top: 15px;
+        margin-left: 40px; }
+        .header nav .nav_list .profile .man {
+          width: 40px;
+          height: 40px; }
+        .header nav .nav_list .profile p {
+          margin-top: 5px;
+          margin-left: 5px;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 150%;
+          font-family: "Rubik", sans-serif; }
+        .header nav .nav_list .profile .down {
+          width: 24px;
+          height: 24px;
+          margin-left: 15px;
+          margin-top: 5px; }
+  .header .header_hero {
+    padding-top: 65px;
+    display: flex;
+    margin-top: 5px;
+    width: 100%;
+    height: 200px;
+    background-image: url(../images/gero_bg.png);
+    background-repeat: no-repeat;
+    background-size: cover; }
+    .header .header_hero img {
+      margin-left: 200px; }
+    .header .header_hero h1 {
+      margin-top: 60px;
+      color: #414141;
+      text-align: center;
+      font-family: "Rubik", sans-serif;
+      font-size: 48px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 150%; }
+
+.section_1 {
+  margin-top: -50px;
+  width: 95%;
+  height: 500px; }
+  .section_1 .vse_produkti {
+    display: flex; }
+    .section_1 .vse_produkti h2 {
+      margin-top: -10px;
+      color: #414141;
+      font-family: "Rubik", sans-serif;
+      font-size: 36px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 150%; }
+    .section_1 .vse_produkti a {
+      display: flex;
+      text-decoration: none; }
+    .section_1 .vse_produkti p {
+      margin-top: 5px;
+      margin-left: 900px;
+      font-family: "Rubik", sans-serif;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 150%;
+      color: #606060; }
+    .section_1 .vse_produkti img {
+      margin-top: 5px;
+      width: 24px;
+      height: 24px; }
+  .section_1 .cards_1 {
+    display: flex;
+    column-gap: 40px; }
+    .section_1 .cards_1 .card_1_1 {
+      padding: 5px;
+      width: 272px;
+      height: 410px;
+      border-radius: 10px;
+      background: #fff;
+      cursor: pointer;
+      box-shadow: 1px 10px 10px 5px rgba(0, 0, 0, 0.1); }
+      .section_1 .cards_1 .card_1_1 img {
+        border-radius: 10px;
+        width: 272px;
+        height: 160px; }
+      .section_1 .cards_1 .card_1_1 .scene {
+        display: flex;
+        justify-content: space-between;
+        align-items: center; }
+        .section_1 .cards_1 .card_1_1 .scene p {
+          color: #414141;
+          font-family: "Rubik", sans-serif;
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 150%; }
+      .section_1 .cards_1 .card_1_1 .karta {
+        display: flex;
+        margin-top: -30px;
+        justify-content: space-between;
+        align-items: center; }
+        .section_1 .cards_1 .card_1_1 .karta p {
+          color: #bfbfbf;
+          font-family: "Rubik", sans-serif;
+          font-size: 12px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 150%; }
+      .section_1 .cards_1 .card_1_1 h3 {
+        color: #414141;
+        font-family: "Rubik", sans-serif;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%; }
+      .section_1 .cards_1 .card_1_1 .rating {
+        margin-top: -10px;
+        width: 256px;
+        height: 16px; }
+      .section_1 .cards_1 .card_1_1 .korzina {
+        width: 256px;
+        height: 40px;
+        margin-top: 10px;
+        margin-left: 8px;
+        border-radius: 4px;
+        border: 1px solid #70c05b;
+        cursor: pointer;
+        gap: 8px;
+        color: #70c05b;
+        font-family: "Rubik", sans-serif;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%; }
+      .section_1 .cards_1 .card_1_1 .korzina:hover {
+        background: #f63;
+        color: #fff;
+        border: none; }
+    .section_1 .cards_1 .card_1_1:hover {
+      box-shadow: 1px 10px 10px 5px rgba(255, 102, 51, 0.2); }
+
+.section_2 {
+  margin-top: 120px;
+  width: 95%;
+  height: 500px; }
+  .section_2 .novinki {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .section_2 .novinki h2 {
+      margin-top: -10px;
+      color: #414141;
+      font-family: "Rubik", sans-serif;
+      font-size: 36px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 150%; }
+    .section_2 .novinki a {
+      display: flex;
+      text-decoration: none; }
+      .section_2 .novinki a p {
+        margin-top: -10px;
+        color: #606060;
+        font-family: "Rubik", sans-serif;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%; }
+      .section_2 .novinki a img {
+        margin-top: -10px;
+        width: 24px;
+        height: 24px; }
+  .section_2 .cards_2 {
+    display: flex;
+    column-gap: 40px; }
+    .section_2 .cards_2 .card_1_1 {
+      padding: 5px;
+      width: 272px;
+      height: 390px;
+      border-radius: 10px;
+      background: #fff;
+      cursor: pointer;
+      box-shadow: 1px 10px 10px 5px rgba(0, 0, 0, 0.1); }
+      .section_2 .cards_2 .card_1_1 img {
+        border-radius: 10px;
+        width: 272px;
+        height: 160px; }
+      .section_2 .cards_2 .card_1_1 .scene {
+        display: flex;
+        justify-content: space-between;
+        align-items: center; }
+        .section_2 .cards_2 .card_1_1 .scene p {
+          color: #414141;
+          font-family: "Rubik", sans-serif;
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 150%; }
+      .section_2 .cards_2 .card_1_1 h3 {
+        color: #414141;
+        font-family: "Rubik", sans-serif;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%; }
+      .section_2 .cards_2 .card_1_1 .rating {
+        margin-top: -10px;
+        width: 256px;
+        height: 16px; }
+      .section_2 .cards_2 .card_1_1 .korzina {
+        width: 256px;
+        height: 40px;
+        margin-top: 10px;
+        margin-left: 8px;
+        border-radius: 4px;
+        border: 1px solid #70c05b;
+        cursor: pointer;
+        gap: 8px;
+        color: #70c05b;
+        font-family: "Rubik", sans-serif;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%; }
+      .section_2 .cards_2 .card_1_1 .korzina:hover {
+        background: #f63;
+        color: #fff;
+        border: none; }
+    .section_2 .cards_2 .card_1_1:hover {
+      box-shadow: 1px 10px 10px 5px rgba(255, 102, 51, 0.2); }
+
+.section_3 {
+  margin-top: 120px;
+  width: 95%;
+  height: 500px; }
+  .section_3 .pokupali {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .section_3 .pokupali h2 {
+      margin-top: -10px;
+      color: #414141;
+      font-family: "Rubik", sans-serif;
+      font-size: 36px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 150%; }
+    .section_3 .pokupali a {
+      display: flex;
+      text-decoration: none; }
+      .section_3 .pokupali a p {
+        margin-top: -10px;
+        color: #606060;
+        font-family: "Rubik", sans-serif;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%; }
+      .section_3 .pokupali a img {
+        margin-top: -10px;
+        width: 24px;
+        height: 24px; }
+  .section_3 .cards_3 {
+    display: flex;
+    column-gap: 40px; }
+    .section_3 .cards_3 .card_1_1 {
+      padding: 5px;
+      width: 272px;
+      height: 390px;
+      border-radius: 10px;
+      background: #fff;
+      cursor: pointer;
+      box-shadow: 1px 10px 10px 5px rgba(0, 0, 0, 0.1); }
+      .section_3 .cards_3 .card_1_1 img {
+        border-radius: 10px;
+        width: 272px;
+        height: 160px; }
+      .section_3 .cards_3 .card_1_1 .scene {
+        display: flex;
+        justify-content: space-between;
+        align-items: center; }
+        .section_3 .cards_3 .card_1_1 .scene p {
+          color: #414141;
+          font-family: "Rubik", sans-serif;
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 150%; }
+      .section_3 .cards_3 .card_1_1 h3 {
+        color: #414141;
+        font-family: "Rubik", sans-serif;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%; }
+      .section_3 .cards_3 .card_1_1 .rating {
+        margin-top: -10px;
+        width: 256px;
+        height: 16px; }
+      .section_3 .cards_3 .card_1_1 .korzina {
+        width: 256px;
+        height: 40px;
+        margin-top: 10px;
+        margin-left: 8px;
+        border-radius: 4px;
+        border: 1px solid #70c05b;
+        cursor: pointer;
+        gap: 8px;
+        color: #70c05b;
+        font-family: "Rubik", sans-serif;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%; }
+      .section_3 .cards_3 .card_1_1 .korzina:hover {
+        background: #f63;
+        color: #fff;
+        border: none; }
+    .section_3 .cards_3 .card_1_1:hover {
+      box-shadow: 1px 10px 10px 5px rgba(255, 102, 51, 0.2); }
+
+.section_4 {
+  margin-top: 120px;
+  width: 95%;
+  height: 350px; }
+  .section_4 h2 {
+    margin-top: -10px;
+    color: #414141;
+    font-family: "Rubik", sans-serif;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%; }
+  .section_4 .cards_4 {
+    display: flex;
+    column-gap: 80px; }
+    .section_4 .cards_4 .card_4_1 {
+      display: flex;
+      width: 584px;
+      height: 200px;
+      background: #e5ffde;
+      cursor: pointer;
+      border-radius: 10px;
+      box-shadow: 0px 8px 47px 0px #e5ffde; }
+      .section_4 .cards_4 .card_4_1 .karta {
+        margin-top: -10px;
+        margin-left: 40px;
+        width: 258px; }
+        .section_4 .cards_4 .card_4_1 .karta h3 {
+          color: #414141;
+          font-family: "Rubik", sans-serif;
+          font-size: 24px;
+          font-style: normal;
+          font-weight: 800;
+          line-height: 150%; }
+        .section_4 .cards_4 .card_4_1 .karta p {
+          color: #414141;
+          font-family: "Rubik", sans-serif;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 150%; }
+      .section_4 .cards_4 .card_4_1 .mini-karta {
+        margin-top: 20px;
+        margin-left: 21px;
+        width: 215px;
+        height: 148px; }
+      .section_4 .cards_4 .card_4_1 .mini-kart {
+        margin-top: 20px;
+        margin-left: 21px;
+        width: 193px;
+        height: 188px; }
+    .section_4 .cards_4 .card_4_1:hover {
+      background: #fcd5ba;
+      box-shadow: 0px 8px 47px 0px rgba(200, 90, 53, 0.51); }
+
+.section_5 {
+  margin-top: 120px;
+  width: 95%;
+  height: 550px; }
+  .section_5 h2 {
+    color: #414141;
+    font-family: "Rubik", sans-serif;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%; }
+  .section_5 .address {
+    display: flex;
+    column-gap: 24px; }
+    .section_5 .address button {
+      width: 106px;
+      height: 32px;
+      border: none;
+      border-radius: 4px;
+      background: #b6b4b1;
+      font-family: "Rubik", sans-serif;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 150%;
+      cursor: pointer; }
+    .section_5 .address button:hover {
+      background: #70c05b; }
+  .section_5 .map {
+    margin-top: 24px;
+    width: 1208px;
+    height: 354px;
+    cursor: pointer; }
+
+.section_6 {
+  margin-top: 120px;
+  width: 95%;
+  height: 550px; }
+  .section_6 .maqolalar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .section_6 .maqolalar a {
+      column-gap: 10px;
+      text-decoration: none;
+      display: flex; }
+    .section_6 .maqolalar h2 {
+      margin-left: 40px;
+      color: #414141;
+      font-family: "Rubik", sans-serif;
+      font-size: 36px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 150%; }
+    .section_6 .maqolalar p {
+      color: #414141;
+      font-family: "Rubik", sans-serif;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 150%; }
+    .section_6 .maqolalar img {
+      margin-top: 15px;
+      width: 24px;
+      height: 24px; }
+  .section_6 .card_maqola {
+    display: flex;
+    margin-left: 40px;
+    column-gap: 40px; }
+    .section_6 .card_maqola .card_maqola_1 {
+      cursor: pointer;
+      border-radius: 8px;
+      width: 376px;
+      height: 420px;
+      background: #fff;
+      box-shadow: 1px 10px 10px 5px rgba(0, 0, 0, 0.1); }
+      .section_6 .card_maqola .card_maqola_1 img {
+        border-radius: 7px; }
+      .section_6 .card_maqola .card_maqola_1 p {
+        margin-left: 5px;
+        margin-right: 5px;
+        color: #414141;
+        font-family: "Rubik", sans-serif;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400; }
+      .section_6 .card_maqola .card_maqola_1 h4 {
+        margin-left: 5px;
+        margin-right: 5px;
+        color: #202020;
+        font-family: "Rubik", sans-serif;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700; }
+      .section_6 .card_maqola .card_maqola_1 h3 {
+        margin-left: 5px;
+        margin-right: 5px;
+        color: #202020;
+        font-family: "Rubik", sans-serif;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400; }
+      .section_6 .card_maqola .card_maqola_1 .batafsil {
+        margin-left: 100px;
+        width: 150px;
+        height: 40px;
+        border-radius: 4px;
+        border: none;
+        cursor: pointer;
+        background: #e5ffde;
+        color: #70c05b;
+        font-family: "Rubik", sans-serif;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400; }
+      .section_6 .card_maqola .card_maqola_1 .batafsil:hover {
+        background: #70c05b;
+        color: #fff; }
+    .section_6 .card_maqola .card_maqola_1:hover {
+      box-shadow: 1px 10px 10px 5px rgba(255, 102, 51, 0.2); }
+
+.footer {
+  display: flex;
+  margin-top: 80px;
+  width: 100%;
+  height: 126px;
+  background-image: url(../images/bg_footer.png);
+  background-repeat: no-repeat;
+  background-size: 100%; }
+  .footer .logo_footer {
+    margin-left: 115px;
+    margin-top: 34px;
+    width: 64px;
+    height: 44px; }
+  .footer ul {
+    margin-top: 50px;
+    margin-left: 40px;
+    display: flex;
+    list-style: none;
+    column-gap: 40px; }
+    .footer ul a {
+      text-decoration: none;
+      color: #414141;
+      font-family: "Rubik", sans-serif;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400; }
+
+/*# sourceMappingURL=main.css.map */
