@@ -13,6 +13,7 @@ const box = document.querySelector('.box');
 let id = new Date().getTime().toString().slice(-5, -1);
 let img = 'https://picsum.photos/id/1/200/300';
 
+
 function getLocalStorage(key) {
     return localStorage.getItem(key) ? JSON.parse(localStorage.getItem(key)) : []
 };
