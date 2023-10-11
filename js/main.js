@@ -1,6 +1,7 @@
 // import {GetArray} from "../js/index";
 // console.log(GetArray());
 
-import { name, age, GetArray } from "./index.js";
+import { object } from "./project.js";
 
-console.log(GetArray());
+let api = object;
+console.log(api);
