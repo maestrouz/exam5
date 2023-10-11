@@ -1,4 +1,115 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800&display=swap");
+.header {
+  max-width: 1920px;
+  height: 340px;
+  margin: 0 auto;
+}
+.header nav {
+  width: 100%;
+  height: 70px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.4862745098);
+  background-color: #fff;
+}
+.header nav .nav__main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  height: 100%;
+  margin: 0 auto;
+}
+.header nav .nav__main img {
+  width: 152px;
+  height: 32px;
+}
+.header nav .nav__main .nav_list {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  gap: 15px;
+}
+.header nav .nav__main .nav_list .menu {
+  display: flex;
+  width: 140px;
+  padding: 8px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  color: #FFF;
+  text-align: center;
+  font-family: Rubik;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  background: #70C05B;
+}
+.header nav .nav__main .nav_list .input_search {
+  padding-left: 10px;
+  position: relative;
+  width: 344px;
+  height: 40px;
+  border-radius: 4px;
+  border: 1px solid #70c05b;
+  outline: none;
+  font-size: 18px;
+  font-family: "Rubik", sans-serif;
+}
+.header nav .nav__main .nav_menu {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  gap: 55px;
+}
+.header nav .nav__main .nav_menu a {
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: black;
+  font-weight: 400;
+}
+.header nav .nav__main .nav_menu a:hover {
+  filter: invert(74%) sepia(8%) saturate(2749%) hue-rotate(62deg) brightness(93%) contrast(80%);
+}
+.header nav .nav__main #admin {
+  background: none;
+  border: none;
+  font-size: 22px;
+  cursor: pointer;
+}
+.header nav .nav__main #admin :hover {
+  color: #70C05B;
+}
+.header .header_hero {
+  padding-top: 65px;
+  display: flex;
+  margin-top: 5px;
+  width: 100%;
+  height: 200px;
+  background-image: url(../img/Group\ 7100.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  align-items: center;
+  justify-content: center;
+}
+.header .header_hero img {
+  width: 302px;
+  height: 202px;
+}
+.header .header_hero h1 {
+  color: #414141;
+  text-align: center;
+  font-family: "Rubik", sans-serif;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -6,6 +117,582 @@
 
 body {
   font-family: "Rubik", sans-serif;
+}
+
+main {
+  max-width: 1920px;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: #FBF8EC;
+}
+main .card_list {
+  width: 100%;
+  height: 1150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main .card_list .container_main {
+  width: 90%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  gap: 45px;
+}
+main .card_list .container_main .card_list_title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+main .card_list .container_main .card_list_title h2 {
+  color: #414141;
+  font-family: "Rubik", sans-serif;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+}
+main .card_list .container_main .card_lists {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 80px;
+}
+main .card_list .container_main .card_lists .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 5px;
+  width: 272px;
+  height: 410px;
+  border-radius: 10px;
+  background: #fff;
+  cursor: pointer;
+  border-radius: 4px;
+  background: #FFF;
+  box-shadow: 1px 2px 4px 0px rgba(0, 0, 0, 0.1);
+  transition: ease-in-out 350ms;
+}
+main .card_list .container_main .card_lists .card img {
+  border-radius: 10px;
+  width: 272px;
+  height: 160px;
+}
+main .card_list .container_main .card_lists .card .scene {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 256px;
+}
+main .card_list .container_main .card_lists .card .scene p {
+  color: #414141;
+  font-family: "Rubik", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+}
+main .card_list .container_main .card_lists .card .karta {
+  display: flex;
+  width: 256px;
+  justify-content: space-between;
+  align-items: center;
+}
+main .card_list .container_main .card_lists .card .karta p {
+  color: #bfbfbf;
+  font-family: "Rubik", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+main .card_list .container_main .card_lists .card h3 {
+  color: #414141;
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  width: 256px;
+}
+main .card_list .container_main .card_lists .card .rating {
+  margin-top: -10px;
+  width: 256px;
+  height: 16px;
+}
+main .card_list .container_main .card_lists .card .korzina {
+  width: 256px;
+  height: 40px;
+  margin-top: 10px;
+  margin-left: 8px;
+  border-radius: 4px;
+  border: 1px solid #70c05b;
+  cursor: pointer;
+  gap: 8px;
+  color: #70c05b;
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+main .card_list .container_main .card_lists .card .korzina:hover {
+  background: #f63;
+  color: #fff;
+  border: none;
+}
+main .card_list .container_main .card_lists .card:hover {
+  transform: scale(1.05);
+  box-shadow: 1px 2px 8px 2px rgba(255, 102, 51, 0.2);
+}
+main .section_2 {
+  margin-top: 120px;
+  width: 95%;
+  height: 500px;
+}
+main .section_2 .novinki {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main .section_2 .novinki h2 {
+  margin-top: -10px;
+  color: #414141;
+  font-family: "Rubik", sans-serif;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+}
+main .section_2 .novinki a {
+  display: flex;
+  text-decoration: none;
+}
+main .section_2 .novinki a p {
+  margin-top: -10px;
+  color: #606060;
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+main .section_2 .novinki a img {
+  margin-top: -10px;
+  width: 24px;
+  height: 24px;
+}
+main .section_2 .cards_2 {
+  display: flex;
+  column-gap: 40px;
+}
+main .section_2 .cards_2 .card_1_1 {
+  padding: 5px;
+  width: 272px;
+  height: 390px;
+  border-radius: 10px;
+  background: #fff;
+  cursor: pointer;
+  box-shadow: 1px 10px 10px 5px rgba(0, 0, 0, 0.1);
+}
+main .section_2 .cards_2 .card_1_1 img {
+  border-radius: 10px;
+  width: 272px;
+  height: 160px;
+}
+main .section_2 .cards_2 .card_1_1 .scene {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main .section_2 .cards_2 .card_1_1 .scene p {
+  color: #414141;
+  font-family: "Rubik", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+}
+main .section_2 .cards_2 .card_1_1 h3 {
+  color: #414141;
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+main .section_2 .cards_2 .card_1_1 .rating {
+  margin-top: -10px;
+  width: 256px;
+  height: 16px;
+}
+main .section_2 .cards_2 .card_1_1 .korzina {
+  width: 256px;
+  height: 40px;
+  margin-top: 10px;
+  margin-left: 8px;
+  border-radius: 4px;
+  border: 1px solid #70c05b;
+  cursor: pointer;
+  gap: 8px;
+  color: #70c05b;
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+main .section_2 .cards_2 .card_1_1 .korzina:hover {
+  background: #f63;
+  color: #fff;
+  border: none;
+}
+main .section_2 .cards_2 .card_1_1:hover {
+  box-shadow: 1px 10px 10px 5px rgba(255, 102, 51, 0.2);
+}
+main .section_3 {
+  margin-top: 120px;
+  width: 95%;
+  height: 500px;
+}
+main .section_3 .pokupali {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main .section_3 .pokupali h2 {
+  margin-top: -10px;
+  color: #414141;
+  font-family: "Rubik", sans-serif;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+}
+main .section_3 .pokupali a {
+  display: flex;
+  text-decoration: none;
+}
+main .section_3 .pokupali a p {
+  margin-top: -10px;
+  color: #606060;
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+main .section_3 .pokupali a img {
+  margin-top: -10px;
+  width: 24px;
+  height: 24px;
+}
+main .section_3 .cards_3 {
+  display: flex;
+  column-gap: 40px;
+}
+main .section_3 .cards_3 .card_1_1 {
+  padding: 5px;
+  width: 272px;
+  height: 390px;
+  border-radius: 10px;
+  background: #fff;
+  cursor: pointer;
+  box-shadow: 1px 10px 10px 5px rgba(0, 0, 0, 0.1);
+}
+main .section_3 .cards_3 .card_1_1 img {
+  border-radius: 10px;
+  width: 272px;
+  height: 160px;
+}
+main .section_3 .cards_3 .card_1_1 .scene {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main .section_3 .cards_3 .card_1_1 .scene p {
+  color: #414141;
+  font-family: "Rubik", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+}
+main .section_3 .cards_3 .card_1_1 h3 {
+  color: #414141;
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+main .section_3 .cards_3 .card_1_1 .rating {
+  margin-top: -10px;
+  width: 256px;
+  height: 16px;
+}
+main .section_3 .cards_3 .card_1_1 .korzina {
+  width: 256px;
+  height: 40px;
+  margin-top: 10px;
+  margin-left: 8px;
+  border-radius: 4px;
+  border: 1px solid #70c05b;
+  cursor: pointer;
+  gap: 8px;
+  color: #70c05b;
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+main .section_3 .cards_3 .card_1_1 .korzina:hover {
+  background: #f63;
+  color: #fff;
+  border: none;
+}
+main .section_3 .cards_3 .card_1_1:hover {
+  box-shadow: 1px 10px 10px 5px rgba(255, 102, 51, 0.2);
+}
+main .section_4 {
+  margin-top: 120px;
+  width: 95%;
+  height: 350px;
+}
+main .section_4 h2 {
+  margin-top: -10px;
+  color: #414141;
+  font-family: "Rubik", sans-serif;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+}
+main .section_4 .cards_4 {
+  display: flex;
+  column-gap: 80px;
+}
+main .section_4 .cards_4 .card_4_1 {
+  display: flex;
+  width: 584px;
+  height: 200px;
+  background: #e5ffde;
+  cursor: pointer;
+  border-radius: 10px;
+  box-shadow: 0px 8px 47px 0px #e5ffde;
+}
+main .section_4 .cards_4 .card_4_1 .karta {
+  margin-top: -10px;
+  margin-left: 40px;
+  width: 258px;
+}
+main .section_4 .cards_4 .card_4_1 .karta h3 {
+  color: #414141;
+  font-family: "Rubik", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 150%;
+}
+main .section_4 .cards_4 .card_4_1 .karta p {
+  color: #414141;
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+main .section_4 .cards_4 .card_4_1 .mini-karta {
+  margin-top: 20px;
+  margin-left: 21px;
+  width: 215px;
+  height: 148px;
+}
+main .section_4 .cards_4 .card_4_1 .mini-kart {
+  margin-top: 20px;
+  margin-left: 21px;
+  width: 193px;
+  height: 188px;
+}
+main .section_4 .cards_4 .card_4_1:hover {
+  background: #fcd5ba;
+  box-shadow: 0px 8px 47px 0px rgba(200, 90, 53, 0.51);
+}
+main .section_5 {
+  margin-top: 120px;
+  width: 95%;
+  height: 550px;
+}
+main .section_5 h2 {
+  color: #414141;
+  font-family: "Rubik", sans-serif;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+}
+main .section_5 .address {
+  display: flex;
+  column-gap: 24px;
+}
+main .section_5 .address button {
+  width: 106px;
+  height: 32px;
+  border: none;
+  border-radius: 4px;
+  background: #b6b4b1;
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  cursor: pointer;
+}
+main .section_5 .address button:hover {
+  background: #70c05b;
+}
+main .section_5 .map {
+  margin-top: 24px;
+  width: 1208px;
+  height: 354px;
+  cursor: pointer;
+}
+main .section_6 {
+  margin-top: 120px;
+  width: 95%;
+  height: 550px;
+}
+main .section_6 .maqolalar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main .section_6 .maqolalar a {
+  column-gap: 10px;
+  text-decoration: none;
+  display: flex;
+}
+main .section_6 .maqolalar h2 {
+  margin-left: 40px;
+  color: #414141;
+  font-family: "Rubik", sans-serif;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+}
+main .section_6 .maqolalar p {
+  color: #414141;
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+main .section_6 .maqolalar img {
+  margin-top: 15px;
+  width: 24px;
+  height: 24px;
+}
+main .section_6 .card_maqola {
+  display: flex;
+  margin-left: 40px;
+  column-gap: 40px;
+}
+main .section_6 .card_maqola .card_maqola_1 {
+  cursor: pointer;
+  border-radius: 8px;
+  width: 376px;
+  height: 420px;
+  background: #fff;
+  box-shadow: 1px 10px 10px 5px rgba(0, 0, 0, 0.1);
+}
+main .section_6 .card_maqola .card_maqola_1 img {
+  border-radius: 7px;
+}
+main .section_6 .card_maqola .card_maqola_1 p {
+  margin-left: 5px;
+  margin-right: 5px;
+  color: #414141;
+  font-family: "Rubik", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+}
+main .section_6 .card_maqola .card_maqola_1 h4 {
+  margin-left: 5px;
+  margin-right: 5px;
+  color: #202020;
+  font-family: "Rubik", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+}
+main .section_6 .card_maqola .card_maqola_1 h3 {
+  margin-left: 5px;
+  margin-right: 5px;
+  color: #202020;
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+}
+main .section_6 .card_maqola .card_maqola_1 .batafsil {
+  margin-left: 100px;
+  width: 150px;
+  height: 40px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  background: #e5ffde;
+  color: #70c05b;
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+}
+main .section_6 .card_maqola .card_maqola_1 .batafsil:hover {
+  background: #70c05b;
+  color: #fff;
+}
+main .section_6 .card_maqola .card_maqola_1:hover {
+  box-shadow: 1px 10px 10px 5px rgba(255, 102, 51, 0.2);
+}
+
+.footer {
+  display: flex;
+  margin-top: 80px;
+  width: 100%;
+  height: 126px;
+  background-image: url(../images/bg_footer.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.footer .logo_footer {
+  margin-left: 115px;
+  margin-top: 34px;
+  width: 64px;
+  height: 44px;
+}
+.footer ul {
+  margin-top: 50px;
+  margin-left: 40px;
+  display: flex;
+  list-style: none;
+  column-gap: 40px;
+}
+.footer ul a {
+  text-decoration: none;
+  color: #414141;
+  font-family: "Rubik", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
 }
 
 /*# sourceMappingURL=main.css.map */
