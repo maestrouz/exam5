@@ -76,7 +76,7 @@
           </a>
 
         </div>
-        <button id="admin">
+        <button id="admin" class="admin_btn">
           <i class="fa-solid fa-user"></i>
         </button>
       </div>
@@ -98,21 +98,16 @@
         <div class="card_lists" id="card_list">
 
         </div>
-        <section class="add_list">
-          <div class="add_list_inp">
-            <form action="">
-              <label for="name">Name:</label>
-              <input type="text" id="productName">
-              <label for="price">Price:</label>
-              <input type="text" id="productPrice">
-            </form>
-            <button id="submit">Submit</button>
-          </div>
-          <div class="box"></div>
-        </section>
       </div>
     </section>
-    <section></section>
+    <section class="admin">
+      <h1>Log in Admin</h1>
+      <form action="">
+        <input type="text" id="adminName" placeholder="admin">
+        <input type="password" id="adminPassword" placeholder="admin">
+        <button id="adminBtn">Log In</button>
+      </form>
+    </section>
   </main>
 
   <footer class="footer container">

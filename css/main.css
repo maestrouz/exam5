@@ -3,12 +3,16 @@
   max-width: 1920px;
   height: 340px;
   margin: 0 auto;
+  position: relative;
 }
 .header nav {
   width: 100%;
   height: 70px;
   box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.4862745098);
   background-color: #fff;
+  z-index: 3;
+  position: absolute;
+  top: -2%;
 }
 .header nav .nav__main {
   display: flex;
@@ -75,13 +79,16 @@
 .header nav .nav__main .nav_menu a:hover {
   filter: invert(74%) sepia(8%) saturate(2749%) hue-rotate(62deg) brightness(93%) contrast(80%);
 }
-.header nav .nav__main #admin {
+.header nav .nav__main .admin_btn {
   background: none;
   border: none;
   font-size: 22px;
   cursor: pointer;
 }
-.header nav .nav__main #admin :hover {
+.header nav .nav__main .admin_btn :hover {
+  color: #70C05B;
+}
+.header nav .nav__main .admin_btn2 {
   color: #70C05B;
 }
 .header .header_hero {
@@ -118,6 +125,7 @@ main {
   flex-direction: column;
   justify-content: center;
   background: #FBF8EC;
+  overflow: hidden;
 }
 main .card_list {
   width: 100%;
@@ -240,23 +248,131 @@ main .card_list .container_main .card_lists .card:hover {
   transform: scale(1.05);
   box-shadow: 1px 2px 8px 2px rgba(255, 102, 51, 0.2);
 }
-main .add_list {
-  width: 100%;
-  height: 1150px;
+main .card_list2 {
+  display: none;
+}
+main .admin {
+  width: 300px;
+  height: 330px;
+  padding: 15px 5px;
+  background: #fff;
+  position: absolute;
+  top: -50%;
+  left: 79%;
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.332);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 55px;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  transition: ease-in-out 450ms;
+  z-index: 1;
 }
-main .add_list .box {
+main .admin form {
+  width: 90%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+main .admin form input {
+  width: 200px;
+  height: 30px;
+  padding: 0px 10px;
+  outline: none;
+  border: 2px solid #f63;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 8px;
+}
+main .admin form button {
+  width: 200px;
+  height: 35px;
+  border: none;
+  border-radius: 8px;
+  background: rgba(255, 102, 51, 0.432);
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+main .admin2 {
+  top: 9%;
+}
+
+.add_main {
+  max-width: 1920px;
+  height: 100vh;
+  background: #FBF8EC;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.add_list {
+  width: 100%;
+  height: 1150px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 55px;
+  display: flex;
+}
+.add_list .add_list_inp {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 155px;
+  border-bottom: 1px solid #e6dbad;
+  width: 100%;
+  height: 10%;
+}
+.add_list .add_list_inp form {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.add_list .add_list_inp form label {
+  margin-left: 85px;
+  font-size: 22px;
+  color: #414141;
+  font-weight: 600;
+}
+.add_list .add_list_inp form input {
+  border-radius: 6px;
+  outline: none;
+  border: none;
+  padding: 5px 10px;
+  font-size: 16px;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2392156863);
+  width: 300px;
+  height: 35px;
+}
+.add_list .add_list_inp form input::placeholder {
+  font-style: italic;
+}
+.add_list .add_list_inp button {
+  width: 150px;
+  height: 35px;
+  background: #70c05b;
+  font-size: 16px;
+  font-weight: 500;
+  color: #FFF;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.add_list .box {
   width: 95%;
   height: 85%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  gap: 35px;
 }
-main .add_list .box .new_card {
+.add_list .box .new_card {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -271,11 +387,11 @@ main .add_list .box .new_card {
   box-shadow: 1px 2px 4px 0px rgba(0, 0, 0, 0.1);
   transition: ease-in-out 350ms;
 }
-main .add_list .box .new_card img {
+.add_list .box .new_card img {
   width: 272px;
   height: 160px;
 }
-main .add_list .box .new_card h2 {
+.add_list .box .new_card h2 {
   color: #414141;
   font-family: "Rubik", sans-serif;
   font-size: 18px;
@@ -283,7 +399,7 @@ main .add_list .box .new_card h2 {
   font-weight: 700;
   line-height: 150%;
 }
-main .add_list .box .new_card button {
+.add_list .box .new_card button {
   width: 256px;
   height: 40px;
   margin-top: 10px;
@@ -299,14 +415,59 @@ main .add_list .box .new_card button {
   font-weight: 400;
   line-height: 150%;
 }
-main .add_list .box .new_card button :hover {
+.add_list .box .new_card button :hover {
   background: #f63;
   color: #fff;
   border: none;
 }
-main .add_list .box .new_card:hover {
+.add_list .box .new_card p {
+  font-size: 14px;
+}
+.add_list .box .new_card:hover {
   transform: scale(1.05);
   box-shadow: 1px 2px 8px 2px rgba(255, 102, 51, 0.2);
+}
+
+.send {
+  width: 80px;
+  height: 80px;
+  position: fixed;
+  border: 0;
+  border-radius: 50%;
+  background: #f63;
+  color: #FBF8EC;
+  font-size: 16px;
+  font-weight: 600;
+  top: 632px;
+  left: 1410px;
+  box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.2941176471);
+  transition: ease-in-out 450ms;
+}
+
+.send:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.clear {
+  width: 80px;
+  height: 80px;
+  position: fixed;
+  border: 0;
+  border-radius: 50%;
+  background: #414141;
+  color: #FBF8EC;
+  font-size: 16px;
+  font-weight: 600;
+  top: 632px;
+  left: 1310px;
+  box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.2941176471);
+  transition: ease-in-out 450ms;
+}
+
+.clear:hover {
+  cursor: pointer;
+  transform: scale(1.1);
 }
 
 .footer {
