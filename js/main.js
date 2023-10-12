@@ -62,21 +62,5 @@ window.addEventListener('DOMContentLoaded', () => {
         });
         cardList.innerHTML = productHTML.join(''); // Display products from localStorage
     }
-    const addButtons = document.querySelectorAll('.add');
-    
-    addButtons.forEach((button) => {
-        button.addEventListener('click', function (e) {
-            let uid = e.target.getAttribute('data-id');
-            
-            products.forEach((item) => {
-                if (item.id === uid) {
-                    basket.push(item);
-                    // You can optionally remove the item from 'products' here if you want
-                }
-            });
-            
-            // Update the 'basket' content or perform any desired actions
-           localStorage.setItem('product',JSON.stringify(basket));
-        });
-    });
 });
+cardList.innerHTML = productHTML.join('');
