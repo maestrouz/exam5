@@ -44,23 +44,58 @@ adminButton.addEventListener('click', (e) => {
 
 // Retrieve and display products from localStorage
 let products = JSON.parse(localStorage.getItem('list')); // Parse the JSON string
+let basket = []
+// window.addEventListener('DOMContentLoaded', () => {
+//     if (Array.isArray(products)) { // Check if 'products' is an array
+//         let productHTML = products.map((item) => {
+//             return `
+//             <div class="card" data-id="${item.id}">
+//                 <img src="${item.img}" alt="img" />
+//                 <div class="scene">
+//                     <p>${item.name}</p>
+//                     <p>${item.price}₽</p>
+//                 </div>
+//                 <h3>    Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, in.</h3>
+//                 <button class="korzina">Savatga</button>
+//             </div>
+//             `;
+//         });
+//         cardList.innerHTML = productHTML.join(''); // Display products from localStorage
+//     }
+// });
+// cardList.innerHTML = productHTML.join('');
+
 
 window.addEventListener('DOMContentLoaded', () => {
-    if (Array.isArray(products)) { // Check if 'products' is an array
-        let productHTML = products.map((item) => {
-            return `
-            <div class="card" data-id="${item.id}">
-                <img src="${item.img}" alt="img" />
-                <div class="scene">
-                    <p>${item.name}</p>
-                    <p>${item.price}₽</p>
-                </div>
-                <h3>    Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, in.</h3>
-                <button class="korzina">Savatga</button>
-            </div>
-            `;
+    let time = new Date();
+    let display = products.map((item) => {
+        return `
+        <div class="card" id="el" data-id="${item.id}">
+            <img src="${item.img}" alt="">
+            <h2>${item.name}</h2>
+            <h2>${item.price}</h2>
+            <p>${time} shu vaqtda qoshildi</p>
+            <button class="add" data-id="${item.id}">Buy</button>
+        </div>
+        `;
+    });
+    cardList.innerHTML = display.join('');
+    
+    const addButtons = document.querySelectorAll('.add');
+    
+    addButtons.forEach((button) => {
+        button.addEventListener('click', function (e) {
+            let uid = e.target.getAttribute('data-id');
+            
+            products.forEach((item) => {
+                if (item.id === uid) {
+                    basket.push(item);
+                    // You can optionally remove the item from 'products' here if you want
+                }
+            });
+            
+            // Update the 'basket' content or perform any desired actions
+           localStorage.setItem('product',JSON.stringify(basket));
         });
-        cardList.innerHTML = productHTML.join(''); // Display products from localStorage
-    }
+    });
 });
-cardList.innerHTML = productHTML.join('');
