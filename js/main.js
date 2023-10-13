@@ -51,10 +51,10 @@ let basket = []
 //             return `
 //             <div class="card" data-id="${item.id}">
 //                 <img src="${item.img}" alt="img" />
-//                 <div class="scene">
-//                     <p>${item.name}</p>
-//                     <p>${item.price}₽</p>
-//                 </div>
+                // <div class="scene">
+                //     <p>${item.name}</p>
+                //     <p>${item.price}₽</p>
+                // </div>
 //                 <h3>    Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, in.</h3>
 //                 <button class="korzina">Savatga</button>
 //             </div>
@@ -67,14 +67,16 @@ let basket = []
 
 
 window.addEventListener('DOMContentLoaded', () => {
-    let time = new Date();
+    // let time = new Date();
     let display = products.map((item) => {
         return `
         <div class="card" id="el" data-id="${item.id}">
             <img src="${item.img}" alt="">
-            <h2>${item.name}</h2>
-            <h2>${item.price}</h2>
-            <p>${time} shu vaqtda qoshildi</p>
+            <div class="scene">
+                    <p>${item.name}</p>
+                    <p>${item.price}₽</p>
+                </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, in</p>
             <button class="add" data-id="${item.id}">Buy</button>
         </div>
         `;
@@ -82,11 +84,9 @@ window.addEventListener('DOMContentLoaded', () => {
     cardList.innerHTML = display.join('');
     
     const addButtons = document.querySelectorAll('.add');
-    
     addButtons.forEach((button) => {
         button.addEventListener('click', function (e) {
             let uid = e.target.getAttribute('data-id');
-            
             products.forEach((item) => {
                 if (item.id === uid) {
                     basket.push(item);
@@ -95,7 +95,9 @@ window.addEventListener('DOMContentLoaded', () => {
             });
             
             // Update the 'basket' content or perform any desired actions
-           localStorage.setItem('product',JSON.stringify(basket));
+           localStorage.setItem('product',JSON.stringify(basket));  
         });
     });
 });
+// products = getLocalStorage();
+
